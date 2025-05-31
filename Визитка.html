@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нищеброды 500ч | Официальный сайт клана</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+        
+        .wooden-bg {
+            background-color: #5c2b1a;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233d1e11' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .rust-bg {
+            background-color: #8b3100;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235a1f00' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .title-font {
+            font-family: 'Reggae One', cursive;
+        }
+        
+        .member-card:hover {
+            transform: rotate(2deg);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .wooden-border {
+            border: 4px solid #5c2b1a;
+            box-shadow: 0 0 0 2px #8b3100, 0 0 0 4px #5c2b1a;
+        }
+        
+        .rusty-button {
+            background: linear-gradient(to bottom, #8b3100, #5c2b1a);
+            border: 2px solid #3d1e11;
+            text-shadow: 1px 1px 1px #000;
+        }
+        
+        .rusty-button:hover {
+            background: linear-gradient(to bottom, #a33b00, #6d2400);
+        }
+        
+        .forum-post {
+            background: linear-gradient(to right, #5c2b1a, #3d1e11);
+            border-left: 4px solid #8b3100;
+        }
+        
+        .forum-header {
+            border-bottom: 2px solid #8b3100;
+        }
+    </style>
+</head>
+<body class="wooden-bg text-yellow-100">
+    <!-- Header -->
+    <header class="rust-bg py-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-skull-crossbones text-3xl text-yellow-400 mr-2"></i>
+                    <h1 class="title-font text-3xl md:text-4xl font-bold text-yellow-300">НИЩЕБРОДЫ 500ч</h1>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-2 md:gap-6">
+                    <a href="#about" class="px-3 py-1 rusty-button rounded-full hover:bg-yellow-600 hover:text-black transition">О НАС</a>
+                    <a href="#team" class="px-3 py-1 rusty-button rounded-full hover:bg-yellow-600 hover:text-black transition">УЧАСТНИКИ</a>
+                    <a href="#clan" class="px-3 py-1 rusty-button rounded-full hover:bg-yellow-600 hover:text-black transition">КЛАН</a>
+                    <a href="#raids" class="px-3 py-1 rusty-button rounded-full hover:bg-yellow-600 hover:text-black transition">РЕЙДЫ</a>
+                    <a href="#shame" class="px-3 py-1 rusty-button rounded-full hover:bg-yellow-600 hover:text-black transition">ПОЗОР</a>
+                    <a href="#join" class="px-3 py-1 bg-yellow-600 text-black rounded-full hover:bg-yellow-400 hover:text-black font-bold pulse">ХОЧУ ТЕРПЕТЬ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-black bg-opacity-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="title-font text-5xl md:text-7xl mb-6 text-yellow-400">НИЩЕБРОДЫ 500ч</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Мы не рейдим базы. Мы их... ээ... фармим космо и умираем на перерабе...
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#about" class="px-6 py-3 bg-yellow-600 text-black rounded-full font-bold hover:bg-yellow-400 hover:text-black transition">
+                    УЗНАТЬ БОЛЬШЕ
+                </a>
+                <a href="#shame" class="px-6 py-3 rusty-button text-yellow-100 rounded-full font-bold hover:bg-yellow-600 hover:text-black transition">
+                    ПРО ПОЗОР
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 rust-bg bg-opacity-80">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-8 text-center text-yellow-400">МЫ НЕ ПРОСТО НИЩЕБРОДЫ</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg mb-4">
+                        Мы не строим базы - мы их фармим. Мы не делаем рейды - мы на них умираем. 
+                        Но зато мы мастера в фарме космо и бочек!
+                    </p>
+                    <p class="text-xl font-bold mb-6">
+                        Наш девиз: "Один за всех, и все за скрап! (но только если он бесплатный)"
+                    </p>
+                    <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border">
+                        <h3 class="text-2xl font-bold mb-3 text-yellow-400">НАША ФИЛОСОФИЯ</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-skull text-yellow-400 mt-1 mr-2"></i>
+                                <span>Фармить до последнего дыхания</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-door-open text-yellow-300 mt-1 mr-2"></i>
+                                <span>Никогда не запоминать коды от дверей</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-box-open text-yellow-200 mt-1 mr-2"></i>
+                                <span>Собирать весь хлам, даже если он не нужен</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://i.postimg.cc/N0gyJwyr/NVIDIA-Overlay-A9-DGgl-FEm-Y.png" alt="Нищеброды в игре" class="rounded-lg wooden-border w-full max-w-md">
+                        <div class="absolute -bottom-4 -right-4 bg-yellow-600 text-black px-4 py-2 rounded-lg font-bold">
+                            Наша база (обычно)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-black bg-opacity-70">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-12 text-center text-yellow-400">НАША КОМАНДА НЕУДАЧНИКОВ</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Member 1 -->
+                <div class="member-card rust-bg p-6 rounded-lg wooden-border transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="w-24 h-24 bg-yellow-600 rounded-full mx-auto mb-3 flex items-center justify-center text-4xl text-black">
+                            <i class="fas fa-angry"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-yellow-300">Киллуа</h3>
+                        <p class="text-yellow-200 italic">Токсичный сын арбалета</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-bold">Токсичность:</span>
+                            <span class="text-yellow-400">∞/∞</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-bold">Фраз в чат:</span>
+                            <span>"ГГ ВСЕ УМЕРЛИ"</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Помощник Кирилла (ох уж этот неадекват). Любит когда в сундуках всё разложено по порядку. 
+                        Если найдет бардак - мгновенно сливает варп.
+                    </p>
+                </div>
+                
+                <!-- Member 2 -->
+                <div class="member-card rust-bg p-6 rounded-lg wooden-border transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="w-24 h-24 bg-yellow-600 rounded-full mx-auto mb-3 flex items-center justify-center text-4xl text-black">
+                            <i class="fas fa-poo"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-yellow-300">Кирилл</h3>
+                        <p class="text-yellow-200 italic">Глава долбаёбов</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-bold">Тилтов в день:</span>
+                            <span class="text-yellow-400">∞</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-bold">Сранья в сундук:</span>
+                            <span class="text-yellow-400">∞/∞</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Комбатёр и главный по тильтам. Его фирменный стиль - срать в сундук и уходить в тильт после первого же фейла.
+                    </p>
+                    <div class="mt-2 bg-black bg-opacity-30 p-2 rounded text-xs">
+                        <span class="font-bold">Рекорд:</span> 10 тилтов за 1 вайп
+                    </div>
+                </div>
+                
+                <!-- Member 3 -->
+                <div class="member-card rust-bg p-6 rounded-lg wooden-border transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="w-24 h-24 bg-yellow-600 rounded-full mx-auto mb-3 flex items-center justify-center text-4xl text-black">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-yellow-300">Никита</h3>
+                        <p class="text-yellow-200 italic">Сын космо</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-bold">Выносов с космо:</span>
+                            <span class="text-yellow-400">5</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-bold">Смертей на космо:</span>
+                            <span class="text-yellow-400">2442134</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Пока не вынесет 5 скрапа с космо - не успокоится. Приходит играть редко и всегда пьяный. 
+                        Его девиз: "Я не пьяный, это сервер кривой!"
+                    </p>
+                    <div class="mt-2 bg-black bg-opacity-30 p-2 rounded text-xs font-bold text-center">
+                        5 скрапа или смерть!
+                    </div>
+                </div>
+                
+                <!-- Member 4 -->
+                <div class="member-card rust-bg p-6 rounded-lg wooden-border transition duration-300">
+                    <div class="text-center mb-4">
+                        <div class="w-24 h-24 bg-yellow-600 rounded-full mx-auto mb-3 flex items-center justify-center text-4xl text-black">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-yellow-300">Леша</h3>
+                        <p class="text-yellow-200 italic">Сын каменной кирки</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="font-bold">Фарма бочек:</span>
+                            <span class="text-yellow-400">∞</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-bold">Кирок сломал:</span>
+                            <span class="text-yellow-400">∞</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        Молчаливый фармила. Всегда в поисках бочек и каменных глыб. Его можно не видеть часами, 
+                        но потом он приносит 10 камня и горд этим.
+                    </p>
+                    <div class="mt-2 bg-black bg-opacity-30 p-2 rounded text-xs italic text-center">
+                        "Я нашел бочку... ну кажется"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clan Info Section -->
+    <section id="clan" class="py-16 rust-bg bg-opacity-80">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-8 text-center text-yellow-400">НИЩЕБРОДЫ 500ч</h2>
+            <p class="text-xl text-center mb-12 max-w-3xl mx-auto">
+                Клан, который ничего не может кроме как фармить космо и умирать на перерабе
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">0</div>
+                    <div class="text-lg">Скрап в банке</div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">2</div>
+                    <div class="text-lg">Рейдов (оба провалены)</div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">500</div>
+                    <div class="text-lg">Общие часы (вместе)</div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">ОФИЦИАЛЬНОЕ ОПИСАНИЕ</h3>
+                    <p class="mb-4">
+                        Официальное название нашего клана, которое полностью отражает нашу суть. 
+                        Мы не просто нищеброды, мы нищеброды с 500 часами в игре!
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-yellow-400 mt-1 mr-2"></i>
+                            <span>Мы не строим базы - они сами разваливаются</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-yellow-400 mt-1 mr-2"></i>
+                            <span>Мы не делаем рейды - мы их боимся</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-300 mt-1 mr-2"></i>
+                            <span>Мы мастера фарма космо (но умираем на выходе)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-300 mt-1 mr-2"></i>
+                            <span>Мы умеем дропать 1 бобовку и убегать</span>
+                        </li>
+                    </ul>
+                    <div class="bg-black bg-opacity-30 p-4 rounded-lg wooden-border italic">
+                        Наш девиз: "Фармим космо → умираем на перерабе → повторяем"
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">НАШИ ДОСТИЖЕНИЯ</h3>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-2">ПОСЛЕДНИЙ ЛУТ</h4>
+                        <p class="mb-2">Наш самый ценный трофей за все время:</p>
+                        <div class="bg-black bg-opacity-50 p-4 rounded-lg wooden-border text-center font-bold">
+                            1 камень <span class="text-sm font-normal">(украден у новичка)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-2">НАША "БАЗА"</h4>
+                        <p>Обычно это 2x2 с дверью, которую забыли закодировать</p>
+                        <div class="mt-2 bg-black bg-opacity-30 p-2 rounded text-sm wooden-border">
+                            <span class="font-bold">Рекорд выживания:</span> 2 часа
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">РЕКРУТИНГ</h4>
+                        <p class="mb-2">Мы ищем таких же нищебродов, которые:</p>
+                        <ul class="space-y-1">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-300 mt-1 mr-2"></i>
+                                <span>Умеют умирать с полным инвентарем</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-300 mt-1 mr-2"></i>
+                                <span>Путают коды от дверей</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-300 mt-1 mr-2"></i>
+                                <span>Кричат "ААА РЕЙД" при виде одного топора</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Raids Section -->
+    <section id="raids" class="py-16 bg-black bg-opacity-70">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-12 text-center text-yellow-400">НАШИ ГЕНИАЛЬНЫЕ ПЛАНЫ</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rust-bg p-6 rounded-lg wooden-border">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-yellow-300">ПЛАН: "ДИПЛОМАТИЯ"</h3>
+                    <p class="mb-4 text-center">
+                        Попросить чужую базу по-хорошему "ну пожалуйста, можно мы заберем пару сундуков?"
+                    </p>
+                    <div class="flex justify-center">
+                        <div class="bg-black bg-opacity-50 px-6 py-2 rounded-full wooden-border">
+                            <span class="font-bold">ШАНСЫ:</span> 0.1%
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rust-bg p-6 rounded-lg wooden-border">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-yellow-300">ПЛАН: "ОТЧАЯННЫЕ"</h3>
+                    <p class="mb-4 text-center">
+                        Выйти всем кланом на лыжах с деревянными копьями против группы с автоматами
+                    </p>
+                    <div class="flex justify-center">
+                        <div class="bg-black bg-opacity-50 px-6 py-2 rounded-full wooden-border">
+                            <span class="font-bold">ШАНСЫ:</span> ну вдруг повезет
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shame Section -->
+    <section id="shame" class="py-16 rust-bg bg-opacity-80">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-12 text-center text-yellow-400">НАШ ПОЗОР</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">∞</div>
+                    <div class="text-lg">ПРОИГРАНО БОЁВ</div>
+                    <div class="text-sm mt-2 italic">но мы не считали (стыдно)</div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">1,024</div>
+                    <div class="text-lg">УМЕРЛИ НА ПЕРЕРАБЕ</div>
+                    <div class="text-sm mt-2 italic">"я думал там никого нет"</div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg wooden-border text-center">
+                    <div class="text-5xl font-bold text-yellow-400 mb-2">∞</div>
+                    <div class="text-lg">ПОТЕРЯНО ЛУТА</div>
+                    <div class="text-sm mt-2 italic">обычно еще до выхода с базы</div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold mb-6 text-center text-yellow-300">ИСТОРИЯ НАШИХ ПОЗОРНЫХ ПОТЕРЬ</h3>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg wooden-border">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-300">"Забытые коды"</h4>
+                    <p>Потеряли всю базу потому что Кирилл забыл сменить коды после тильта.</p>
+                </div>
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg wooden-border">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-300">"10 камня"</h4>
+                    <p>Леша добыл 10 камня за 3 часа фарма, чтобы тут же умереть на перерабе.</p>
+                </div>
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg wooden-border">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-300">"Фейл космо"</h4>
+                    <p>Никита вынес с космо 5 скрапа, но забыл что у него выпал, пока шел к базе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-16 bg-black bg-opacity-70">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto rust-bg p-8 rounded-lg wooden-border">
+                <h2 class="title-font text-3xl md:text-4xl mb-6 text-center text-yellow-400">ХОЧЕШЬ ТОЖЕ ТЕРПЕТЬ?</h2>
+                <p class="text-center mb-8">
+                    Хочешь стать частью нашего позора? Заполни форму и, возможно, мы позволим тебе умирать вместе с нами!<br>
+                    Требования: умение терпеть неудачи и фармить 10 камня в час.
+                </p>
+                
+                <form class="space-y-4">
+                    <div>
+                        <label class="block mb-1 font-bold">Твой ник в Rust</label>
+                        <input type="text" class="w-full px-4 py-2 bg-black bg-opacity-50 border border-yellow-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Лучше не позорный">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-1 font-bold">Часов в игре (реальных)</label>
+                        <input type="number" class="w-full px-4 py-2 bg-black bg-opacity-50 border border-yellow-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="500 и меньше">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-1 font-bold">Почему ты хочешь к нам? (Будь честен)</label>
+                        <textarea class="w-full px-4 py-2 bg-black bg-opacity-50 border border-yellow-400 rounded focus:outline-none focus:ring-2 focus:ring-yellow-400" rows="3" placeholder="Потому что другие кланы меня не берут..."></textarea>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="w-full py-3 bg-yellow-600 hover:bg-yellow-400 text-black font-bold rounded-full transition duration-300 flex items-center justify-center">
+                            ОТПРАВИТЬ ЗАЯВКУ НА ПОЗОР
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section class="py-16 wooden-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="title-font text-4xl mb-8 text-center text-yellow-400">ФОРУМ НИЩЕБРОДОВ</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- Post 1 -->
+                <div class="forum-post p-4 rounded-lg">
+                    <div class="forum-header pb-2 mb-2">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+                                    К
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-yellow-300">Кирилл (Клоун-комбатёр)</h3>
+                                    <p class="text-xs text-yellow-200">2 часа назад</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-black bg-opacity-50 px-2 py-1 rounded text-sm mr-2">😡🤡</span>
+                                <span class="bg-black bg-opacity-70 px-2 py-1 rounded text-sm">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-2">
+                        Вышел с луком против томика и проебал лук, я не хочу в это играть, игра дерьма! 😡🤡
+                    </p>
+                    <button class="text-xs text-yellow-300 hover:text-yellow-200">Ответить</button>
+                </div>
+                
+                <!-- Post 2 -->
+                <div class="forum-post p-4 rounded-lg">
+                    <div class="forum-header pb-2 mb-2">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+                                    К
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-yellow-300">Киллуа (Клоун-строитель)</h3>
+                                    <p class="text-xs text-yellow-200">1 час назад</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-black bg-opacity-50 px-2 py-1 rounded text-sm mr-2">🤣🤡</span>
+                                <span class="bg-black bg-opacity-70 px-2 py-1 rounded text-sm">8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-2">
+                        Ебать ты лох, хахаха 🤣🤡
+                    </p>
+                    <button class="text-xs text-yellow-300 hover:text-yellow-200">Ответить</button>
+                </div>
+                
+                <!-- Post 3 -->
+                <div class="forum-post p-4 rounded-lg">
+                    <div class="forum-header pb-2 mb-2">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+                                    К
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-yellow-300">Киллуа (Клоун-строитель)</h3>
+                                    <p class="text-xs text-yellow-200">3 часа назад</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-black bg-opacity-50 px-2 py-1 rounded text-sm mr-2">🗑️🤬</span>
+                                <span class="bg-black bg-opacity-70 px-2 py-1 rounded text-sm">4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-2">
+                        Блять, опять в сундуках засранно, ресурсы складируйте суки! 🗑️🤬
+                    </p>
+                    <button class="text-xs text-yellow-300 hover:text-yellow-200">Ответить</button>
+                </div>
+                
+                <!-- Post 4 -->
+                <div class="forum-post p-4 rounded-lg">
+                    <div class="forum-header pb-2 mb-2">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center text-xl font-bold mr-3">
+                                    К
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-yellow-300">Кирилл (Клоун-комбатёр)</h3>
+                                    <p class="text-xs text-yellow-200">2 часа назад</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="bg-black bg-opacity-50 px-2 py-1 rounded text-sm mr-2">💩🤡</span>
+                                <span class="bg-black bg-opacity-70 px-2 py-1 rounded text-sm">6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-2">
+                        Я туда насру скоро в сундук, лошара! 💩🤡
+                    </p>
+                    <button class="text-xs text-yellow-300 hover:text-yellow-200">Ответить</button>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <button class="px-6 py-2 bg-yellow-600 hover:bg-yellow-400 text-black font-bold rounded-full transition">
+                    ПОКАЗАТЬ БОЛЬШЕ ПОЗОРА
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rust-bg py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="title-font text-2xl font-bold text-yellow-300">НИЩЕБРОДЫ 500ч</h3>
+                    <p class="text-sm">Клан профессиональных неудачников с 2023 года</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-black bg-opacity-50 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-black transition">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-black bg-opacity-50 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-black transition">
+                        <i class="fab fa-steam"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-black bg-opacity-50 rounded-full flex items-center justify-center hover:bg-yellow-600 hover:text-black transition">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-yellow-400 mt-6 pt-6 text-center text-sm">
+                <p>© 2023 Нищеброды 500ч. Все права не защищены, как и наши базы.</p>
+                <p class="mt-1">Сделано с болью, страданиями и 10 камня в инвентаре.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form submission
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Спасибо за заявку! Мы свяжемся с вами, когда научимся правильно кодировать двери.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
